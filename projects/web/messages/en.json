@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Kill Star — Remove Markdown Bold (**) Instantly",
+    "description": "Free online tool to remove markdown bold syntax (**) from your text. Paste, click, copy. Simple and fast."
+  },
+  "hero": {
+    "title": "Kill the Stars",
+    "subtitle": "Strip ** or turn them into real bold"
+  },
+  "converter": {
+    "inputPlaceholder": "Paste your text with **bold** markers here...",
+    "convert": "Kill **",
+    "clear": "Clear",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "tabPlain": "Plain text",
+    "tabBold": "Bold applied",
+    "outputPlaceholder": "Clean text will appear here..."
+  },
+  "footer": {
+    "about": "A simple tool to remove markdown bold syntax (**) from AI-generated text.",
+    "privacy": "Privacy",
+    "contact": "Contact"
+  },
+  "howto": {
+    "title": "How to Use",
+    "step1": "Paste your text containing ** markers",
+    "step2": "Click the \"Kill **\" button",
+    "step3": "Switch between Plain text / Bold applied and copy"
+  }
+}

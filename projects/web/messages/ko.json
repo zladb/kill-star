@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Kill Star — 마크다운 볼드(**) 한 번에 제거",
+    "description": "AI가 생성한 텍스트에서 마크다운 볼드(**) 기호를 간편하게 제거하는 무료 온라인 도구입니다."
+  },
+  "hero": {
+    "title": "별표 퇴치기",
+    "subtitle": "**를 없애거나, 진짜 굵게 바꾸거나"
+  },
+  "converter": {
+    "inputPlaceholder": "**굵은 글씨** 마크가 포함된 텍스트를 붙여넣으세요...",
+    "convert": "Kill **",
+    "clear": "지우기",
+    "copy": "복사",
+    "copied": "복사됨!",
+    "tabPlain": "텍스트만",
+    "tabBold": "굵게 적용",
+    "outputPlaceholder": "깔끔한 텍스트가 여기에 나타납니다..."
+  },
+  "footer": {
+    "about": "AI가 생성한 텍스트에서 마크다운 볼드(**)를 제거하는 심플 도구입니다.",
+    "privacy": "개인정보처리방침",
+    "contact": "문의"
+  },
+  "howto": {
+    "title": "사용 방법",
+    "step1": "** 마크가 포함된 텍스트를 붙여넣기",
+    "step2": "\"Kill **\" 버튼 클릭",
+    "step3": "텍스트만 / 굵게 적용 탭에서 결과 복사"
+  }
+}

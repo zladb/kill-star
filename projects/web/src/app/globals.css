@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf6f1;
+  --foreground: #2d2016;
+  --primary: #da7b4a;
+  --primary-hover: #c56a3a;
+  --surface: #ffffff;
+  --surface-border: #e8ddd2;
+  --muted: #8c7a6a;
+  --accent: #f0e6da;
+}
+
+.dark {
+  --background: #1a1410;
+  --foreground: #f0e6da;
+  --primary: #e08a55;
+  --primary-hover: #eda06e;
+  --surface: #251e17;
+  --surface-border: #3d3228;
+  --muted: #9c8b7a;
+  --accent: #2d2418;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-surface: var(--surface);
+  --color-surface-border: var(--surface-border);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Hero animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
