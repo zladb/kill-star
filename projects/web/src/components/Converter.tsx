@@ -9,6 +9,14 @@ function stripStars(text: string): string {
   return text.replace(/\*\*/g, "");
 }
 
+function escapeHtml(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+function applyBold(s: string): string {
+  return s.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+}
+
 function markdownToHtml(text: string): string {
   return text
     .replace(/&/g, "&amp;")
@@ -16,6 +24,67 @@ function markdownToHtml(text: string): string {
     .replace(/>/g, "&gt;")
     .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
     .replace(/\n/g, "<br>");
+}
+
+function markdownToClipboardHtml(text: string): string {
+  const lines = text.split("\n");
+  const result: string[] = [];
+  let i = 0;
+
+  const processInline = (s: string) => applyBold(escapeHtml(s));
+
+  const flushList = (tag: string, items: string[]) => {
+    result.push(`<${tag}>${items.map((item) => `<li>${item}</li>`).join("")}</${tag}>`);
+  };
+
+  while (i < lines.length) {
+    const line = lines[i];
+
+    // Headings
+    const h3 = line.match(/^### (.+)/);
+    if (h3) { result.push(`<h3>${processInline(h3[1])}</h3>`); i++; continue; }
+
+    const h2 = line.match(/^## (.+)/);
+    if (h2) { result.push(`<h2>${processInline(h2[1])}</h2>`); i++; continue; }
+
+    const h1 = line.match(/^# (.+)/);
+    if (h1) { result.push(`<h1>${processInline(h1[1])}</h1>`); i++; continue; }
+
+    // Unordered list: collect consecutive items
+    if (/^- /.test(line)) {
+      const items: string[] = [];
+      while (i < lines.length && /^- /.test(lines[i])) {
+        items.push(processInline(lines[i].replace(/^- /, "")));
+        i++;
+      }
+      flushList("ul", items);
+      continue;
+    }
+
+    // Ordered list: collect consecutive items
+    if (/^\d+\. /.test(line)) {
+      const items: string[] = [];
+      while (i < lines.length && /^\d+\. /.test(lines[i])) {
+        items.push(processInline(lines[i].replace(/^\d+\. /, "")));
+        i++;
+      }
+      flushList("ol", items);
+      continue;
+    }
+
+    // Blockquote
+    const bq = line.match(/^> (.+)/);
+    if (bq) { result.push(`<blockquote>${processInline(bq[1])}</blockquote>`); i++; continue; }
+
+    // Empty line
+    if (line.trim() === "") { i++; continue; }
+
+    // Regular paragraph
+    result.push(`<p>${processInline(line)}</p>`);
+    i++;
+  }
+
+  return result.join("");
 }
 
 export default function Converter() {
@@ -45,13 +114,13 @@ export default function Converter() {
   const copy = async () => {
     setCopied(false);
 
-    if (mode === "bold" && boldRef.current) {
-      const htmlContent = boldRef.current.innerHTML;
-      const text = boldRef.current.innerText;
+    if (mode === "bold") {
+      const clipboardHtml = markdownToClipboardHtml(input);
+      const text = stripStars(input);
       try {
         await navigator.clipboard.write([
           new ClipboardItem({
-            "text/html": new Blob([htmlContent], { type: "text/html" }),
+            "text/html": new Blob([clipboardHtml], { type: "text/html" }),
             "text/plain": new Blob([text], { type: "text/plain" }),
           }),
         ]);
