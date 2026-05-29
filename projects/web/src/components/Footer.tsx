@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+import LocaleLink from "@/components/LocaleLink";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -9,21 +9,21 @@ export default function Footer() {
   return (
     <footer className="text-center text-sm text-muted py-6 px-4 border-t border-surface-border">
       <nav className="flex flex-wrap justify-center gap-x-4 gap-y-1 mb-3">
-        <Link href="/about" className="hover:text-primary transition-colors">
+        <LocaleLink href="/about" className="hover:text-primary transition-colors">
           {t("about")}
-        </Link>
-        <Link href="/guides" className="hover:text-primary transition-colors">
+        </LocaleLink>
+        <LocaleLink href="/guides" className="hover:text-primary transition-colors">
           {t("guides")}
-        </Link>
-        <Link href="/faq" className="hover:text-primary transition-colors">
+        </LocaleLink>
+        <LocaleLink href="/faq" className="hover:text-primary transition-colors">
           {t("faq")}
-        </Link>
-        <Link href="/privacy" className="hover:text-primary transition-colors">
+        </LocaleLink>
+        <LocaleLink href="/privacy" className="hover:text-primary transition-colors">
           {t("privacy")}
-        </Link>
-        <Link href="/terms" className="hover:text-primary transition-colors">
+        </LocaleLink>
+        <LocaleLink href="/terms" className="hover:text-primary transition-colors">
           {t("terms")}
-        </Link>
+        </LocaleLink>
       </nav>
       <p>{t("description")}</p>
     </footer>

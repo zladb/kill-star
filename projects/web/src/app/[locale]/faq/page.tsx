@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+import LocaleLink from "@/components/LocaleLink";
 
 const faqKeys = ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8"] as const;
 
@@ -8,12 +8,12 @@ export default function FAQ() {
 
   return (
     <article className="max-w-2xl mx-auto w-full py-8">
-      <Link
+      <LocaleLink
         href="/"
         className="text-primary hover:text-primary-hover text-sm mb-6 inline-block"
       >
         &larr; {t("back")}
-      </Link>
+      </LocaleLink>
 
       <h1 className="text-3xl font-bold text-foreground mb-3">{t("title")}</h1>
       <p className="text-muted mb-8">{t("subtitle")}</p>

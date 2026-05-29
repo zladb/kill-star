@@ -1,4 +1,4 @@
-import Link from "next/link";
+import LocaleLink from "@/components/LocaleLink";
 
 export default function GuideLayout({
   back,
@@ -11,12 +11,12 @@ export default function GuideLayout({
 }) {
   return (
     <article className="max-w-2xl mx-auto w-full py-8">
-      <Link
+      <LocaleLink
         href="/guides"
         className="text-primary hover:text-primary-hover text-sm mb-6 inline-block"
       >
         &larr; {back}
-      </Link>
+      </LocaleLink>
 
       <h1 className="text-3xl font-bold text-foreground mb-8">{title}</h1>
 

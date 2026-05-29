@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://killstar.app/en</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://killstar.app/en/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://killstar.app/en/privacy</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://killstar.app/en/terms</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://killstar.app/en/faq</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://killstar.app/en/guides</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://killstar.app/en/guides/why-asterisks</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://killstar.app/en/guides/clean-ai-text</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://killstar.app/en/guides/markdown-basics</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://killstar.app/en/guides/notion-paste-tips</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://killstar.app/ko</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://killstar.app/ko/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://killstar.app/ko/privacy</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://killstar.app/ko/terms</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://killstar.app/ko/faq</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://killstar.app/ko/guides</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://killstar.app/ko/guides/why-asterisks</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://killstar.app/ko/guides/clean-ai-text</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://killstar.app/ko/guides/markdown-basics</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://killstar.app/ko/guides/notion-paste-tips</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+</urlset>

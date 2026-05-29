@@ -1,17 +1,17 @@
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+import LocaleLink from "@/components/LocaleLink";
 
 export default function About() {
   const t = useTranslations("about");
 
   return (
     <article className="max-w-2xl mx-auto w-full py-8">
-      <Link
+      <LocaleLink
         href="/"
         className="text-primary hover:text-primary-hover text-sm mb-6 inline-block"
       >
         &larr; {t("back")}
-      </Link>
+      </LocaleLink>
 
       <h1 className="text-3xl font-bold text-foreground mb-6">{t("title")}</h1>
 

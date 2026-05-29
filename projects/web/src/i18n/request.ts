@@ -7,10 +7,16 @@ import ko from "../../messages/ko.json";
 const messages: Record<string, typeof en> = { en, ko };
 
 export default getRequestConfig(async ({ requestLocale }) => {
-  const requested = await requestLocale;
-  const locale = hasLocale(routing.locales, requested)
-    ? requested
-    : routing.defaultLocale;
+  let locale = routing.defaultLocale;
+
+  try {
+    const requested = await requestLocale;
+    if (hasLocale(routing.locales, requested)) {
+      locale = requested;
+    }
+  } catch {
+    // Static export: requestLocale may not be available
+  }
 
   return {
     locale,
