@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 import HeroAnimation from "@/components/HeroAnimation";
 import Converter from "@/components/Converter";
 
@@ -21,8 +20,8 @@ export default function Home() {
       <Converter />
 
       {/* How-to */}
-      <section className="mt-16 max-w-2xl mx-auto">
-        <h2 className="text-xl font-semibold text-foreground mb-4 text-center">
+      <section className="mt-16 max-w-2xl mx-auto text-center">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           {t("howto.title")}
         </h2>
         <ol className="space-y-3 text-muted text-left list-decimal list-inside">
@@ -30,50 +29,6 @@ export default function Home() {
           <li>{t("howto.step2")}</li>
           <li>{t("howto.step3")}</li>
         </ol>
-      </section>
-
-      {/* Why section */}
-      <section className="mt-16 max-w-2xl mx-auto">
-        <h2 className="text-xl font-semibold text-foreground mb-3 text-center">
-          {t("why.title")}
-        </h2>
-        <p className="text-muted leading-relaxed">{t("why.body")}</p>
-      </section>
-
-      {/* Features */}
-      <section className="mt-16 max-w-2xl mx-auto">
-        <h2 className="text-xl font-semibold text-foreground mb-6 text-center">
-          {t("features.title")}
-        </h2>
-        <div className="grid sm:grid-cols-2 gap-4">
-          {(["f1", "f2", "f3", "f4"] as const).map((key) => (
-            <div
-              key={key}
-              className="p-4 rounded-lg border border-surface-border bg-surface"
-            >
-              <h3 className="font-semibold text-foreground mb-1">
-                {t(`features.${key}.heading`)}
-              </h3>
-              <p className="text-muted text-sm">
-                {t(`features.${key}.body`)}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* FAQ preview */}
-      <section className="mt-16 max-w-2xl mx-auto text-center">
-        <h2 className="text-xl font-semibold text-foreground mb-3">
-          {t("faqPreview.title")}
-        </h2>
-        <p className="text-muted mb-4">{t("faqPreview.body")}</p>
-        <Link
-          href="/faq"
-          className="inline-block text-primary hover:text-primary-hover font-medium transition-colors"
-        >
-          {t("faqPreview.link")} &rarr;
-        </Link>
       </section>
 
       {/* JSON-LD structured data */}
