@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import LocaleLink from "@/components/LocaleLink";
 
 const guides = [
@@ -8,8 +8,14 @@ const guides = [
   { slug: "notion-paste-tips", icon: "N" },
 ] as const;
 
-export default function Guides() {
-  const t = useTranslations("guides");
+export default async function Guides({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("guides");
 
   return (
     <div className="max-w-2xl mx-auto w-full py-8">

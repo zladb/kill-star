@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import ThemeToggle from "@/components/ThemeToggle";
@@ -64,6 +65,8 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  setRequestLocale(locale);
+
   const messages = allMessages[locale] ?? allMessages.en;
 
   return (
@@ -91,7 +94,7 @@ export default async function LocaleLayout({
         />
       </head>
       <body className="min-h-full flex flex-col bg-background text-foreground">
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           {/* Top bar */}
           <header className="flex items-center justify-between px-4 py-3 max-w-4xl mx-auto w-full">
             <span className="font-bold text-primary text-lg tracking-tight">

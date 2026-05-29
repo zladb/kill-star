@@ -1,8 +1,14 @@
-import { useTranslations } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import GuideLayout from "@/components/GuideLayout";
 
-export default function MarkdownBasics() {
-  const t = useTranslations("guideMarkdownBasics");
+export default async function MarkdownBasics({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("guideMarkdownBasics");
 
   return (
     <GuideLayout back={t("back")} title={t("title")}>

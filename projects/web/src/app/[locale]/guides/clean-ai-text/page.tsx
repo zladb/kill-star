@@ -1,8 +1,14 @@
-import { useTranslations } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import GuideLayout from "@/components/GuideLayout";
 
-export default function CleanAiText() {
-  const t = useTranslations("guideCleanAiText");
+export default async function CleanAiText({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("guideCleanAiText");
 
   return (
     <GuideLayout back={t("back")} title={t("title")}>

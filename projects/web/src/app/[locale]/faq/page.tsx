@@ -1,10 +1,16 @@
-import { useTranslations } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import LocaleLink from "@/components/LocaleLink";
 
 const faqKeys = ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8"] as const;
 
-export default function FAQ() {
-  const t = useTranslations("faq");
+export default async function FAQ({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("faq");
 
   return (
     <article className="max-w-2xl mx-auto w-full py-8">

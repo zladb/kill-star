@@ -1,8 +1,14 @@
-import { useTranslations } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import LocaleLink from "@/components/LocaleLink";
 
-export default function PrivacyPolicy() {
-  const t = useTranslations("privacy");
+export default async function PrivacyPolicy({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("privacy");
 
   return (
     <article className="max-w-2xl mx-auto w-full py-8">

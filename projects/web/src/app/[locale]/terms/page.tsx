@@ -1,8 +1,14 @@
-import { useTranslations } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import LocaleLink from "@/components/LocaleLink";
 
-export default function TermsOfService() {
-  const t = useTranslations("terms");
+export default async function TermsOfService({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("terms");
 
   return (
     <article className="max-w-2xl mx-auto w-full py-8">
