@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState<boolean | null>(null);
 
   useEffect(() => {
     const stored = localStorage.getItem("theme");
@@ -19,6 +19,15 @@ export default function ThemeToggle() {
     document.documentElement.classList.toggle("dark", next);
     localStorage.setItem("theme", next ? "dark" : "light");
   };
+
+  if (dark === null) {
+    return (
+      <button
+        aria-label="Toggle theme"
+        className="p-2 rounded-lg hover:bg-accent transition-colors text-foreground w-9 h-9"
+      />
+    );
+  }
 
   return (
     <button

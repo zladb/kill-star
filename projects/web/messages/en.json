@@ -18,14 +18,299 @@
     "outputPlaceholder": "Clean text will appear here..."
   },
   "footer": {
-    "about": "A simple tool to remove markdown bold syntax (**) from AI-generated text.",
-    "privacy": "Privacy",
-    "contact": "Contact"
+    "about": "About",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "guides": "Guides",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "description": "A free tool to remove markdown bold syntax (**) from AI-generated text."
   },
   "howto": {
     "title": "How to Use",
     "step1": "Paste your text containing ** markers",
     "step2": "Click the \"Kill **\" button",
     "step3": "Switch between Plain text / Bold applied and copy"
+  },
+  "why": {
+    "title": "Why Do You Need This?",
+    "body": "AI assistants like ChatGPT, Claude, and Gemini use markdown formatting by default. When you copy their output, double asterisks (**) for bold text come along. These look fine inside chat windows, but when you paste into emails, documents, or presentations, they appear as ugly literal characters. Kill Star cleans this up instantly — so your AI-assisted writing looks polished and professional."
+  },
+  "features": {
+    "title": "Features",
+    "f1": {
+      "heading": "Strip ** Instantly",
+      "body": "Remove all markdown bold markers from your text in one click. No more manual find-and-replace."
+    },
+    "f2": {
+      "heading": "Convert to Real Bold",
+      "body": "Turn ** markers into actual bold formatting that works in Notion, Google Docs, and any rich-text editor."
+    },
+    "f3": {
+      "heading": "100% Private",
+      "body": "Everything runs in your browser. Your text is never sent to any server or stored anywhere."
+    },
+    "f4": {
+      "heading": "Works on Any Device",
+      "body": "Fully responsive design that works perfectly on phones, tablets, and desktops. No app install needed."
+    }
+  },
+  "faqPreview": {
+    "title": "Got Questions?",
+    "body": "Check our FAQ for answers about how Kill Star works, privacy, and more.",
+    "link": "View all FAQ"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "back": "Back to Home",
+    "lastUpdated": "Last updated: May 29, 2026",
+    "intro": {
+      "heading": "Introduction",
+      "body": "Kill Star (\"we\", \"us\", or \"our\") operates the website killstar.app. This page informs you of our policies regarding the collection, use, and disclosure of personal information when you use our service."
+    },
+    "dataCollection": {
+      "heading": "Data Collection",
+      "body": "Kill Star does not collect, store, or transmit any personal data. All text processing happens entirely in your browser. The text you paste into the converter is never sent to any server — it is processed locally using JavaScript on your device."
+    },
+    "localStorage": {
+      "heading": "Local Storage",
+      "body": "We use your browser's local storage solely to remember your theme preference (light or dark mode). This data stays on your device and is never transmitted to our servers."
+    },
+    "thirdParty": {
+      "heading": "Third-Party Services",
+      "body": "We use Google AdSense to display advertisements on our site. Google may use cookies and similar technologies to serve ads based on your prior visits to this or other websites. You can opt out of personalized advertising by visiting Google's Ads Settings (ads.google.com/settings). For more information, please refer to Google's Privacy Policy."
+    },
+    "cookies": {
+      "heading": "Cookies",
+      "body": "Kill Star itself does not set any cookies. However, third-party services such as Google AdSense may set cookies on your browser for advertising purposes. You can manage cookie preferences through your browser settings."
+    },
+    "changes": {
+      "heading": "Changes to This Policy",
+      "body": "We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated date. We encourage you to review this policy periodically."
+    },
+    "contact": {
+      "heading": "Contact Us",
+      "body": "If you have any questions about this privacy policy, please contact us at support@killstar.app."
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "back": "Back to Home",
+    "lastUpdated": "Last updated: May 29, 2026",
+    "acceptance": {
+      "heading": "Acceptance of Terms",
+      "body": "By accessing and using Kill Star (killstar.app), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our service."
+    },
+    "service": {
+      "heading": "Description of Service",
+      "body": "Kill Star is a free, browser-based tool that removes or converts markdown bold syntax (**) from text. All text processing occurs locally in your browser. We do not store, transmit, or process your text on any server."
+    },
+    "usage": {
+      "heading": "Acceptable Use",
+      "body": "You may use Kill Star for any lawful purpose. You agree not to misuse the service, attempt to gain unauthorized access to our systems, or use automated tools to excessively access the site."
+    },
+    "disclaimer": {
+      "heading": "Disclaimer of Warranties",
+      "body": "Kill Star is provided \"as is\" and \"as available\" without warranties of any kind, either express or implied. We do not guarantee that the service will be uninterrupted, error-free, or meet your specific requirements."
+    },
+    "liability": {
+      "heading": "Limitation of Liability",
+      "body": "To the fullest extent permitted by law, Kill Star and its operators shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use the service."
+    },
+    "changes": {
+      "heading": "Changes to Terms",
+      "body": "We reserve the right to modify these terms at any time. Continued use of the service after changes are posted constitutes acceptance of the updated terms."
+    }
+  },
+  "about": {
+    "title": "About Kill Star",
+    "back": "Back to Home",
+    "whatIs": {
+      "heading": "What is Kill Star?",
+      "body": "Kill Star is a free online tool designed to clean up AI-generated text by removing or converting markdown bold syntax (**). When you copy text from AI assistants like ChatGPT or Claude, the output often contains markdown formatting that looks messy when pasted into documents, emails, or other applications."
+    },
+    "why": {
+      "heading": "Why We Built This",
+      "body": "As AI tools become part of everyday workflows, more people encounter the frustration of double asterisks (**) cluttering their text. Kill Star was created to solve this simple but annoying problem — giving you clean, ready-to-use text in one click."
+    },
+    "features": {
+      "heading": "Features",
+      "item1": "Instantly strip all ** markers from text",
+      "item2": "Convert ** markers to real bold formatting for rich-text editors",
+      "item3": "Optimized for pasting into Notion, Google Docs, and other apps",
+      "item4": "Works entirely in your browser — your text never leaves your device"
+    },
+    "contact": {
+      "heading": "Contact",
+      "body": "Have feedback, suggestions, or questions? Reach out to us at support@killstar.app."
+    }
+  },
+  "guides": {
+    "title": "Guides",
+    "back": "Back to Home",
+    "subtitle": "Learn how to deal with markdown formatting in AI-generated text.",
+    "why-asterisks": {
+      "title": "Why Does AI Add ** to Text?",
+      "summary": "Understand why ChatGPT, Claude, and other AI tools wrap words in double asterisks."
+    },
+    "clean-ai-text": {
+      "title": "How to Clean Up AI-Generated Text",
+      "summary": "A step-by-step guide to removing unwanted formatting from AI output."
+    },
+    "markdown-basics": {
+      "title": "What is Markdown? A Beginner's Guide",
+      "summary": "Learn the basics of markdown syntax and why AI uses it."
+    },
+    "notion-paste-tips": {
+      "title": "Tips for Pasting AI Text into Notion",
+      "summary": "Get clean, properly formatted text when pasting AI output into Notion and Google Docs."
+    }
+  },
+  "guideWhyAsterisks": {
+    "title": "Why Does AI Add ** to Text?",
+    "back": "All Guides",
+    "what": {
+      "heading": "What Are Those ** Symbols?",
+      "body": "If you've ever copied text from ChatGPT, Claude, Gemini, or any other AI assistant, you've probably noticed pairs of double asterisks (**) scattered throughout the text. These aren't random characters — they're markdown syntax for bold text. In markdown, wrapping a word or phrase in ** makes it bold: **like this** becomes like this in rendered markdown."
+    },
+    "why": {
+      "heading": "Why Do AI Models Use Markdown?",
+      "body": "AI language models are trained on vast amounts of internet text, including GitHub repositories, documentation, forums, and blog posts — many of which use markdown formatting. As a result, AI models learn to use markdown as their default way of adding emphasis and structure to text. When an AI wants to highlight an important term or make a key point stand out, it instinctively wraps it in ** for bold, just as a developer would in a README file."
+    },
+    "training": {
+      "heading": "The Training Data Factor",
+      "body": "The tendency to use markdown is deeply baked into how AI models communicate. During training, models learn that bold text signals importance. Since markdown is the most common way to express bold in plain text, the model defaults to ** notation. Even when you ask an AI to write plain text, it often still slips in markdown formatting because the pattern is so deeply ingrained in its training."
+    },
+    "when": {
+      "heading": "When Is This a Problem?",
+      "body": "Markdown works great in apps that render it — like GitHub, Notion's markdown mode, or Slack. But when you paste AI text into a regular email, a Word document, a presentation, or a plain text field, the ** symbols show up as literal characters. Instead of bold text, you get ugly asterisks cluttering your content. This is especially frustrating in professional contexts where you're using AI to draft emails, reports, or documents."
+    },
+    "solution": {
+      "heading": "The Solution",
+      "body": "Kill Star solves this problem instantly. Paste your AI-generated text, click one button, and get clean text — either with ** stripped entirely or with real bold formatting applied. No more manually finding and deleting asterisks one by one."
+    }
+  },
+  "guideCleanAiText": {
+    "title": "How to Clean Up AI-Generated Text",
+    "back": "All Guides",
+    "intro": {
+      "heading": "The AI Formatting Problem",
+      "body": "AI assistants like ChatGPT, Claude, and Gemini produce incredibly useful text, but their output often comes with unwanted markdown formatting. Double asterisks (**) for bold, hash symbols (#) for headings, dashes (-) for bullet points — these are all markdown conventions that look great in compatible apps but messy everywhere else. Here's how to clean up your AI text quickly and efficiently."
+    },
+    "step1": {
+      "heading": "Method 1: Use Kill Star (Fastest)",
+      "body": "The quickest way to clean up AI text is to use Kill Star. Simply paste your text into the converter, click 'Kill **', and copy the clean result. You can choose between plain text mode (all ** removed) or bold-applied mode (** converted to real bold formatting). The bold-applied mode is perfect for pasting into rich-text editors like Notion or Google Docs, where you want to keep the emphasis but lose the asterisks."
+    },
+    "step2": {
+      "heading": "Method 2: Ask the AI to Avoid Formatting",
+      "body": "You can instruct the AI to write without markdown. Try adding phrases like 'Please respond in plain text without any markdown formatting' or 'Do not use bold, bullet points, or headings' to your prompts. This works sometimes, but AI models often revert to markdown habits, especially for longer or more structured responses."
+    },
+    "step3": {
+      "heading": "Method 3: Find and Replace",
+      "body": "In any text editor, you can use Find and Replace (Ctrl+H or Cmd+H) to search for ** and replace it with nothing. This works but is manual, tedious for frequent use, and doesn't preserve the bold emphasis — you lose the information about which words were meant to be emphasized."
+    },
+    "tips": {
+      "heading": "Pro Tips",
+      "tip1": "When using AI for emails or documents, always clean the text before sending or sharing",
+      "tip2": "Use Kill Star's 'Bold applied' mode when pasting into Notion or Google Docs to keep the formatting intent",
+      "tip3": "Bookmark Kill Star for quick access — you'll use it more often than you think"
+    },
+    "conclusion": {
+      "heading": "Make It Part of Your Workflow",
+      "body": "As AI becomes a bigger part of how we write and communicate, having a quick cleanup step in your workflow saves time and prevents embarrassing formatting artifacts. Kill Star makes this step effortless — paste, click, copy, done."
+    }
+  },
+  "guideMarkdownBasics": {
+    "title": "What is Markdown? A Beginner's Guide",
+    "back": "All Guides",
+    "what": {
+      "heading": "What is Markdown?",
+      "body": "Markdown is a lightweight text formatting language created by John Gruber in 2004. It lets you add formatting — like bold, italics, headings, and lists — to plain text using simple symbols. Unlike HTML or rich text, markdown is designed to be readable even in its raw form. It's used everywhere: GitHub, Reddit, Slack, Notion, Discord, and many other platforms support markdown natively."
+    },
+    "bold": {
+      "heading": "Bold and Italic",
+      "body": "The most common markdown syntax you'll encounter in AI text is bold. Wrapping text in double asterisks (**) makes it bold, while single asterisks (*) make it italic. You can also use underscores (_) for the same effect."
+    },
+    "headings": {
+      "heading": "Headings",
+      "body": "Headings are created with hash symbols (#). One hash is the largest heading (H1), two hashes (##) for H2, and so on up to six levels. AI models frequently use headings to structure their responses."
+    },
+    "lists": {
+      "heading": "Lists",
+      "body": "Dashes (-) or asterisks (*) at the start of a line create bullet points. Numbers followed by periods (1. 2. 3.) create numbered lists. AI models love using lists to organize information."
+    },
+    "problem": {
+      "heading": "Why Markdown Causes Problems",
+      "body": "Markdown is great when it's rendered by an app that understands it. But when you copy AI text and paste it into an email client, a Word document, or a plain text field, the markdown symbols appear as literal text. You see **important** instead of important in bold. This is because these applications don't interpret markdown — they just display the raw characters."
+    },
+    "fix": {
+      "heading": "How Kill Star Helps",
+      "body": "Kill Star bridges this gap. It takes markdown-formatted text and either strips the formatting symbols entirely (giving you clean plain text) or converts them to real rich-text formatting (like HTML bold tags) that any application can understand. This means you can keep the emphasis the AI intended while getting rid of the ugly ** symbols."
+    }
+  },
+  "guideNotionPaste": {
+    "title": "Tips for Pasting AI Text into Notion",
+    "back": "All Guides",
+    "problem": {
+      "heading": "The Copy-Paste Problem",
+      "body": "Notion is one of the most popular tools for organizing notes, documents, and projects. Many people use AI assistants to generate content and then paste it into Notion. While Notion does support markdown, the results of directly pasting AI text can be inconsistent — sometimes markdown renders correctly, sometimes it doesn't, and sometimes you get a mix of formatted and raw text."
+    },
+    "option1": {
+      "heading": "Option 1: Paste as Plain Text First",
+      "body": "Use Ctrl+Shift+V (Cmd+Shift+V on Mac) to paste as plain text in Notion. This strips all formatting and gives you raw text, including the ** markers. From there, you can manually format in Notion. This works but is time-consuming if the AI used lots of formatting."
+    },
+    "option2": {
+      "heading": "Option 2: Use Kill Star's Bold Applied Mode",
+      "body": "The best approach for Notion is to use Kill Star's 'Bold applied' tab. This converts ** markers into real HTML bold formatting. When you copy from Kill Star's bold-applied output and paste into Notion, the bold text appears correctly formatted — no raw asterisks, just clean bold text. This preserves the AI's formatting intent while working perfectly with Notion's editor."
+    },
+    "option3": {
+      "heading": "Option 3: Use Kill Star's Plain Text Mode",
+      "body": "If you don't need the bold formatting at all, use Kill Star's 'Plain text' tab. This removes all ** markers completely, giving you clean text that you can paste and format manually in Notion however you like."
+    },
+    "gdocs": {
+      "heading": "Works with Google Docs Too",
+      "body": "The same techniques work with Google Docs, Microsoft Word, and other rich-text editors. Kill Star's bold-applied output uses standard HTML formatting that all major editors recognize. Copy from the 'Bold applied' tab and paste — your bold text will appear correctly formatted in any of these applications."
+    },
+    "bestPractice": {
+      "heading": "Best Practice Workflow",
+      "body": "For the smoothest experience: generate your text with AI, paste it into Kill Star, switch to the 'Bold applied' tab, click Copy, and then paste into Notion or your editor of choice. This three-second detour saves you minutes of manual cleanup and ensures your formatting is perfect every time."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "back": "Back to Home",
+    "subtitle": "Everything you need to know about Kill Star.",
+    "q1": {
+      "q": "What is Kill Star?",
+      "a": "Kill Star is a free online tool that removes or converts markdown bold syntax (**) from text. It's designed specifically for cleaning up AI-generated text that contains unwanted markdown formatting."
+    },
+    "q2": {
+      "q": "Is my text sent to any server?",
+      "a": "No. All text processing happens entirely in your browser using JavaScript. Your text never leaves your device — nothing is uploaded, stored, or transmitted to any server."
+    },
+    "q3": {
+      "q": "What's the difference between 'Plain text' and 'Bold applied'?",
+      "a": "Plain text mode strips all ** markers completely, giving you unformatted text. Bold applied mode converts ** markers into real bold formatting (HTML), so when you paste the result into Notion, Google Docs, or other rich-text editors, the bold text appears correctly formatted."
+    },
+    "q4": {
+      "q": "Does Kill Star work with text from any AI?",
+      "a": "Yes. Kill Star works with text from ChatGPT, Claude, Gemini, Copilot, and any other AI assistant that uses markdown bold syntax (**). It simply looks for ** patterns and removes or converts them."
+    },
+    "q5": {
+      "q": "Is Kill Star free?",
+      "a": "Yes, Kill Star is completely free to use with no limits. There are no premium tiers, no sign-ups, and no usage restrictions."
+    },
+    "q6": {
+      "q": "Can I use Kill Star on mobile?",
+      "a": "Yes. Kill Star is fully responsive and works on any device with a web browser — smartphones, tablets, laptops, and desktops."
+    },
+    "q7": {
+      "q": "Does it handle other markdown syntax like headings or lists?",
+      "a": "Kill Star is focused on removing ** bold markers, which is the most common formatting issue in AI-generated text. The bold-applied mode also handles headings (#), lists (- and numbered), and blockquotes (>) for a more complete conversion."
+    },
+    "q8": {
+      "q": "Why do AI models add ** to their text?",
+      "a": "AI language models are trained on large amounts of text from the internet, including GitHub, documentation, and forums that use markdown formatting. As a result, they default to markdown conventions like ** for bold when they want to emphasize text. Check our guide 'Why Does AI Add ** to Text?' for a detailed explanation."
+    }
   }
 }

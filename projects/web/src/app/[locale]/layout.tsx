@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import ThemeToggle from "@/components/ThemeToggle";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
+import Footer from "@/components/Footer";
 import "../globals.css";
 
 import en from "../../../messages/en.json";
@@ -109,9 +110,7 @@ export default async function LocaleLayout({
           </main>
 
           {/* Footer */}
-          <footer className="text-center text-sm text-muted py-6 px-4 border-t border-surface-border">
-            <p>Kill Star &mdash; Remove ** from text</p>
-          </footer>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
